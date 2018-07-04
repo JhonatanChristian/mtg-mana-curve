@@ -1,6 +1,6 @@
 /**
- * Script v1.0
- * Copyright 2017 MTG Mana Curve
+ * MTG Mana Curve
+ * @copyright 2017 MTG Mana Curve
  * GNU License
  */
 $(document).ready(function(){
@@ -37,7 +37,7 @@ $(document).on('change', '.count-trigger', function(){
  *
  * Checks the total of cards added in the calculator.
  *
- * @return int.
+ * @return int
  */
 var checkTotalAddedCards = function(){
   var totalAddedCards = 0;
@@ -58,7 +58,7 @@ var checkTotalAddedCards = function(){
  *
  * Calculate the total number of lands thats are need.
  *
- * @return float.
+ * @return float
  */
 var calculateLandsQuantity = function(){
   var totalCards = 0;
@@ -81,7 +81,7 @@ var calculateLandsQuantity = function(){
  *
  * Modify the value of the element with .display-result class.
  *
- * @return null.
+ * @return null
  */
 var modifyLandsQuantity = function(){
   if(!isNaN(calculateLandsQuantity())){
@@ -188,7 +188,7 @@ $(document).on('change', '.distribution-trigger', function(){
  *
  * Make the sum of all object values.
  *
- * @return Number (int|float).
+ * @return int|float
  */
 var sumObjectValues = function( object ){
   var result = 0;
@@ -201,8 +201,9 @@ var sumObjectValues = function( object ){
 }
 
 /**
- * Charts.
- * Working with charts.
+ * ----------------------------------------------------------------------------
+ * Charts
+ * ----------------------------------------------------------------------------
  */
 if($('#mana-curve-chart').length){
   Chart.defaults.global.maintainAspectRatio = false;
@@ -246,7 +247,7 @@ if($('#mana-curve-chart').length){
  *
  * Modify the values of Mana Curve Chart.
  *
- * @return null.
+ * @return null
  */
 var modifyManaCurveChart = function(){
   var cardsQuantity = [];
