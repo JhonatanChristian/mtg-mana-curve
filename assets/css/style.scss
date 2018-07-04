@@ -1,0 +1,230 @@
+/**
+ * Stylesheet v1.0
+ * Copyright 2017 MTG Mana Curve
+ * GNU License
+ */
+
+ /** SASS
+  =========================================================================== */
+
+/* Color */
+$text-color-primary: #333;
+$text-color-secondary: #555;
+
+$text-color-muted: #777;
+$text-color-success: #43a047;
+$text-color-danger: #b71c1c;
+
+$link-color-primary: #1976D2;
+$link-color-secondary: #b71c1c;
+
+$background-color-primary: #FBFBFB;
+
+$white-clean: #FFF;
+
+/* Fonts */
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../font/Merriweather-Regular.ttf') format('ttf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+$font-family-primary: 'Merriweather', sans-serif;
+$font-family-primary-bold: 700;
+$font-family-primary-small: 85%;
+
+/** CSS
+ =========================================================================== */
+
+html {
+  font-family: $font-family-primary;
+  color: $text-color-primary;
+  background-color: $background-color-primary;
+}
+
+.no-margin-top { margin-top:0!important; }
+.no-margin-right { margin-right:0!important; }
+.no-margin-bottom { margin-bottom:0!important; }
+.no-margin-left { margin-left:0!important; }
+
+/**
+ * Typography
+ */
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 16px; }
+
+p {
+  font-size: 16px;
+  line-height:1.7;
+}
+strong { font-weight: $font-family-primary-bold; }
+p em { font-style: italic; }
+p ins { text-decoration: underline; }
+p u { text-decoration: underline; }
+p s { text-decoration: line-through; }
+p small { font-size: $font-family-primary-small; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+.text-nowrap { white-space: nowrap; }
+
+.text-muted { color: $text-color-muted; }
+.text-success { color: $text-color-success; }
+.text-danger { color: $text-color-danger; }
+
+a {
+  color: $link-color-primary;
+  text-decoration: none;
+}
+
+p a:hover,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover {
+  text-decoration: underline;
+}
+
+article {
+  padding:0 15px;
+}
+
+/**
+ * Fields
+ */
+.field {
+  background-color: $white-clean;
+  border: 1px solid #DDD;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+
+.field.without-padding {
+  padding: 0;
+}
+
+.field.radius {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+/**
+ * Header
+ */
+.header {
+  margin-bottom:20px;
+}
+
+/**
+ * Menus
+ *
+ * Index Menu
+ */
+.index-menu-container {
+  position:fixed;
+}
+
+.index-menu li {
+  display:block;
+}
+
+.index-menu li a {
+  display:block;
+  padding:5px 0;
+}
+
+.index-menu li a:hover {
+  text-decoration: underline!important;
+}
+
+/* Footer menu */
+.menu-footer li {
+  display:inline-block;
+}
+
+.menu-footer li a {
+  padding:10px 20px;
+  cursor:pointer;
+}
+
+.menu-footer li a:hover {
+  text-decoration:underline;
+}
+
+.menu-footer li a:first-child {
+  padding-left:0;
+}
+
+/**
+ * Footer
+ */
+.footer {
+  overflow:hidden;
+  background-color:#EEE;
+  border-top:1px solid #DDD;
+  padding:0 15px;
+}
+
+/**
+ * Calculator
+ */
+.calculator .line {
+  margin-bottom:0!important;
+  padding:10px;
+  border-bottom:1px solid #DDD;
+}
+
+.calculator .line.first {
+  border-bottom:none;
+}
+
+.calculator .line:last-child {
+  border-bottom:none;
+}
+
+.calculator .line:nth-of-type(2) {
+  border-top:1px solid #DDD;
+}
+
+.calculator .line .col:first-child {
+  border-right:1px solid #DDD;
+}
+
+.calculator .line .col:last-child {
+  border-left:1px solid #DDD;
+}
+
+.calculator .line.first .col {
+  border:none;
+}
+
+.calculator .line .col input[type="number"] {
+  font-size:18px;
+}
+
+.calculator .add-line .field {
+  border-top:none;
+}
+
+/**
+ * Calculation result
+ */
+.display-result .big {
+  font-size:30px;
+}
+
+/**
+ * Color distribution result
+ */
+.distribution-percentage li {
+  display: block;
+  padding:5px 0;
+}
