@@ -58,5 +58,5 @@ $route['translate_uri_dashes'] = FALSE;
  * Website
  * ----------------------------------------------------------------------------
  */
-$route['color-distribution'] = 'color_distribution';
-$route['how-it-works'] = 'documentation/how_it_works';
+$route['color-distribution'] = 'Color_Distribution';
+$route['how-it-works'] = 'Documentation/how_it_works';

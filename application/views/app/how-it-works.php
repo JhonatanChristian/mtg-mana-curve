@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col s12 l8">
       <article>
-        <h1 id="how-it-works"><strong>Como o Cálculo Funciona?</strong></h1>
+        <h1 id="how-it-works"><strong><?php echo $this->lang->line('how_it_works_title'); ?></strong></h1>
 
         <p>Em Magic: The Gathering, o cálculo de curva de mana serve para você descobrir a quantidade
         ideal de terrenos para o seu deck e, no caso de decks multicoloridos, a distribuição

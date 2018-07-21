@@ -13,6 +13,7 @@ class Documentation extends CI_Controller {
 		/* Localization. */
 		$this->Localization_Model->localization('header');
 		$this->Localization_Model->localization('footer');
+		$this->Localization_Model->localization('how_it_works');
 
 		/* View. */
 		$this->load->view('app/how-it-works');
